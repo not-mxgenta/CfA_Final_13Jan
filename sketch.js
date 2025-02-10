@@ -1094,7 +1094,6 @@ function drawMessageBoxes() {
 }
 
 function draw() {
-  pcState = 1
   strokeWeight(1)
   background('white');
   translate(windowWidth/2, windowHeight/2)
@@ -1137,10 +1136,6 @@ function draw() {
   //Calculates new mouse coordinates based on center of screen instead of default top left corner, thus allowing coordinates to remain same regardless of window resizing - crucial when calculating mouse click position across different window sizes
   NewmouseX = mouseX - (windowWidth/2 - 300)
   NewmouseY = mouseY - (windowHeight/2 - 250)
-  text(NewmouseX, mouseX+50, mouseY)
-  text(NewmouseY, mouseX+50, mouseY + 10)
-  text(mouseX, mouseX+100, mouseY)
-  text(mouseY, mouseX+100, mouseY + 10)
   pop()
 
 }
